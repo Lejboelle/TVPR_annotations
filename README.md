@@ -3,19 +3,19 @@ The repository provides Top View Person Re-identification (TVPR) annotations and
 
 Before following the guide below, make sure you have downloaded the dataset (http://vrai.dii.univpm.it/re-id-dataset) and video files are in ".avi" format. Split the videos into two folders in your TVPR root folder. Name these folders "avi_color" and "avi_depth", respectively.
 
-Additionally, before running the scripts, create the following directories in your root folder:
-train/
-test/
-tracking_files/depth/train/
-tracking_files/depth/test/
-tracking_files/color/train/
-tracking_files/color/test/
+Additionally, before running the scripts, create the following directories in your root folder: \
+train/ \
+test/ \
+tracking_files/depth/train/ \
+tracking_files/depth/test/ \
+tracking_files/color/train/ \
+tracking_files/color/test/ \
 
-Finally, for each id, create directories that will contain the final ROI images, similar to the example below:
-train/roi_images/color/001/
-train/roi_images/color/002/
-.
-.
+Finally, for each id, create directories that will contain the final ROI images, similar to the example below: \
+train/roi_images/color/001/ \
+train/roi_images/color/002/ \
+. \
+. \
 train/roi_images/color/100/
 
 Directories should be created also in case of color test and depth train/test images, following a similar structure.
@@ -25,6 +25,7 @@ Annotations are extracted using the You Only Look Once (YOLO) detector (REF). \
 Two types of annotations are provided: \
 (1) "tvpr_frame_count.txt" contains information on frame numbers for each video which contains a person in the scene. Should be placed in the TVPR root folder. \
 (2) For each extracted ".avi" file (both RGB and depth, train and test), a corresponding ".csv" file is created, containing ROI coordinates for each frame. Each ".csv" file contains a list of annotations, each providing five numbers: \
+
 frame_id - frame number in the video \
 track_id - always '1', does not have any effect \
 xmin - left coordinate of bounding box \
