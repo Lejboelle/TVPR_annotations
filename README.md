@@ -49,5 +49,6 @@ python extract_ROI.py [AVI/CSV PATH] [OUTPUT_PATH] [MODALITY]
 ```
 
 where [AVI/CSV PATH] is, for example, the path "tracking_files/depth/test", [OUTPUT_PATH] is the path to save in the ROI images, for example, "train/roi_images/color/" (without id folder) and [MODALITY] is 'color' or 'depth'.
+Please note that we exclude id's 23-30, as a result, images from 94 id's are available.
 
 Training and test ROI images should now be extracted and ready to use for training.
