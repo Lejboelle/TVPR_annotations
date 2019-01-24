@@ -9,7 +9,7 @@ test/ \
 tracking_files/depth/train/ \
 tracking_files/depth/test/ \
 tracking_files/color/train/ \
-tracking_files/color/test/ \
+tracking_files/color/test/
 
 Finally, for each id, create directories that will contain the final ROI images, similar to the example below: \
 train/roi_images/color/001/ \
@@ -31,7 +31,7 @@ track_id - always '1', does not have any effect \
 xmin - left coordinate of bounding box \
 ymin - top coordinate of bounding box \
 xmax - right coordinate of bounding box \
-ymax - bottom coordinate of bounding box \
+ymax - bottom coordinate of bounding box
 
 ## Extract relevant part of videos
 First, only the relavant parts of the avi files contained in the dataset are extracted to separate avi files.
