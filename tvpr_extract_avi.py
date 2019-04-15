@@ -33,7 +33,7 @@ pwd_ = sys.argv[1]
 modality = sys.argv[2]
 avi_files = sorted(glob.glob(pwd_+"/avi_"+modality+"/*.avi"))
 annotations = []
-anot_path = sys.argv[3]
+anot_path = pwd_+'tvpr_frame_count.txt'
 anot_file = open(anot_path,'r')
 
 for line in anot_file:
